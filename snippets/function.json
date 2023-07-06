@@ -1,0 +1,28 @@
+{
+    "sub subname { my $item = shift; }": {
+        "prefix": [
+            "fn",
+            "sub"
+        ],
+        "body": [
+            "sub ${1:sub_name} {",
+            "  my ${2:$item} = shift;",
+            "}"
+        ],
+        "description": "sub subname { my $item = shift; }"
+    },
+    "sub subname { my ($item) = @_; }": {
+        "prefix": [
+            "fna",
+            "fn_",
+            "suba",
+            "sub_"
+        ],
+        "body": [
+            "sub ${1:sub_name} {",
+            "  my (${2:args}) = @_;",
+            "}"
+        ],
+        "description": "sub subname { my ($item) = @_; }"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "File get contents": {
+        "prefix": "file_get_contents",
+        "body": [
+            "sub file_get_contents {",
+            "    my $file = shift;",
+            "    open( my $fh, \"<\", $file ) or die(\"cannot open $file\");",
+            "    return do { local $/; <$fh>; };",
+            "}"
+        ],
+        "description": "File get contents"
+    },
+    "File put contents": {
+        "prefix": "file_put_contents",
+        "body": [
+            "sub file_put_contents {",
+            "    my ( $file, $content ) = @_;",
+            "    open( my $fh, \">\", $file ) or die(\"cannot open $file\");",
+            "    print $fh $content;",
+            "}"
+        ],
+        "description": "File put contents"
+    },
+    "open my $fh, <": {
+        "prefix": "ropen",
+        "body": [
+            "open( my $fh, \"<\", $file ) or die(\"cannot open $file\");"
+        ],
+        "description": "open my $fh, <, $file"
+    },
+    "open my $fh, >, $file": {
+        "prefix": "wopen",
+        "body": [
+            "open( my $fh, \">\", $file ) or die(\"cannot open $file\");"
+        ],
+        "description": "open my $fh, >, $file"
+    }
+}

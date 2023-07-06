@@ -1,0 +1,36 @@
+{
+  "name": "perl-awesome-snippets",
+  "displayName": "perl-awesome-snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "perl",
+        "path": "./snippets/file.json"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/control.json"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/feature.json"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/function.json"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/loop.json"
+      }
+    ]
+  }
+}

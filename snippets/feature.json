@@ -1,0 +1,32 @@
+{
+    "use strict, warnings": {
+        "prefix": "feature",
+        "body": [
+            "use strict;",
+            "use warnings;",
+            "use feature qw/ say /;",
+            "use utf8;",
+            "use Data::Dumper;"
+        ],
+        "description": "use strict, warnings"
+    },
+    "use File::*": {
+        "prefix": "file_feature",
+        "body": [
+            "use File::Path;",
+            "use File::Basename;",
+            "use File::Spec;",
+            "use File::Find;",
+            "use File::Temp;",
+            "use File::Copy;"
+        ],
+        "description": "use File::*"
+    },
+    "use Getopt::Long": {
+        "prefix": "getopt_feature",
+        "body": [
+            "use Getopt::Long qw(:config posix_default no_ignore_case gnu_compat);"
+        ],
+        "description": "use Getopt::Long"
+    }
+}

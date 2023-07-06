@@ -1,0 +1,44 @@
+{
+    "while .. {}": {
+        "prefix": [
+            "while",
+            "whl"
+        ],
+        "body": [
+            "while (${1:cond}) {",
+            "  ${2:# code ..}",
+            "}"
+        ],
+        "description": "while .. {}"
+    },
+    "unless .. {}": {
+        "prefix": [
+            "unless",
+            "unl"
+        ],
+        "body": [
+            "unless (${1:cond}) {",
+            "  ${2:# code ..}",
+            "}"
+        ],
+        "description": "unless .. {}"
+    },
+    "for ($items) {}": {
+        "prefix": "for",
+        "body": [
+            "for (${1:@$items}) {",
+            "  ${2:# code ..}",
+            "}"
+        ],
+        "description": "for ($items) {}"
+    },
+    "for my $item ($items) {}": {
+        "prefix": "forv",
+        "body": [
+            "for my ${1:$item} (${2:@$items}) {",
+            "  ${3:# code ..}",
+            "}"
+        ],
+        "description": "for my $item ($items) {}"
+    }
+}
