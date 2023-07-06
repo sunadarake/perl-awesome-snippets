@@ -1,14 +1,32 @@
 {
   "name": "perl-awesome-snippets",
-  "displayName": "perl-awesome-snippets",
-  "description": "",
+  "displayName": "Perl Awesome Snippets",
+  "description": "Perl Awesome Snippets",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.79.0"
+    "vscode": "^1.0.0"
   },
+  "publisher": "sunadarake",
+  "author": {
+    "name": "Sunadarake"
+  },
+  "license": "MIT",
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Programming Languages"
   ],
+  "keywords": [
+    "snippets",
+    "productivity",
+    "coding",
+    "perl",
+    "perl5"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunadarake/perl-awesome-snippets"
+  },
+  "homepage": "https://github.com/sunadarake/perl-awesome-snippets",
   "contributes": {
     "snippets": [
       {
