@@ -4,6 +4,13 @@ This extension provides useful snippets for Perl programming.
 
 It includes a wide range of snippets that aim to make certain tedious coding tasks in Perl more convenient, such as handling features and other repetitive constructs.
 
+## How to Install
+
+```bash
+curl -fsSL https://github.com/sunadarake/perl-awesome-snippets/raw/main/perl-awesome-snippets-0.0.1.vsix > perl-awesome-snippets-0.0.1.vsix
+code --install-extension  perl-awesome-snippets-0.0.1.vsix
+```
+
 ## Snippets
 
 ### Feature
